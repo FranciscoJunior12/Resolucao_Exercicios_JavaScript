@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Operações matemáticas</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Operações matemáticas</h1>
+      
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1" name="num1">
+            <br><br>
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2" name="num2">
+            <br><br>
+            <label for="operador">Operador:</label>
+            <select id="operador">
+                <option value="+">Adição</option>
+                <option value="-">Subtração</option>
+                <option value="*">Multiplicação</option>
+                <option value="/">Divisão</option>
+            </select>
+            <br><br>
+            <button onclick="calcular()">Calcular</button>
+            <br><br>
+     
+        <p id="resultado"></p>
+    </div>
+
+    <script src="ex2.js"></script>
+</body>
+
+</html>

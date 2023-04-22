@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar números pares e ímpares</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      color: #4caf50;
+    }
+
+    li:nth-child(odd) {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Verificar números pares e ímpares</h1>
+    <label for="input-numero">Digite um número:</label>
+    <input type="number" id="input-numero">
+    <button onclick="verificarNumeros()">Verificar</button>
+    <ul id="resultado"></ul>
+  </div>
+
+  <script>
+    function verificarNumeros() {
+      var n = document.getElementById("input-numero").value;
+      var resultado = document.getElementById("resultado");
+      resultado.innerHTML = "";
+
+      for (var i = 0; i <= n; i++) {
+        var li = document.createElement("li");
+        if (i % 2 === 0) {
+          li.innerHTML = i + " é par";
+        } else {
+          li.innerHTML = i + " é ímpar";
+        }
+        resultado.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio 3 ficha 5B</title>
+
+
+
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    span {
+        color: #4CAF50;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Manipulando Strings</h1>
+        <br>
+        <input type="text" id="texto" placeholder="introduza uma String">
+        <br>
+        <input type="button" id="texto" value="Submeter" onclick="manipularString()" style="cursor: pointer;">
+        <br>
+        <h4>Revertido: <span id="revertido"></span></h4>
+        <br>
+        <h4>Numero de Vogais: <span id="numVogal"> </span></h4>
+        <br>
+        <h4>Inicial Maiuscula: <span id="InicalMaiuscula"></span></h4>
+    </div>
+
+
+    <script src="ex3.js"></script>
+</body>
+
+</html>

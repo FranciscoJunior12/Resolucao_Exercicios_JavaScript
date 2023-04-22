@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 5px 20px 0px 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus {
+            border: 1px solid green;
+        }
+
+        input.error,
+        select.error {
+            border: 1px solid red;
+        }
+
+        .message {
+            /* margin: 10px 0px 0px 0px; */
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .success {
+            background-color: #cfc;
+            color: green;
+        }
+
+        .error {
+            background-color: #fcc;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento">
+        <label for="provincia_nascimento">Província de Nascimento:</label>
+        <select id="provincia_nascimento" name="provincia_nascimento">
+            <option value="">Selecione...</option>
+            <option value="Maputo">Maputo</option>
+            <option value="Gaza">Gaza</option>
+            <option value="Inhambane">Inhambane</option>
+            <option value="Sofala">Sofala</option>
+            <option value="Manica">Manica</option>
+            <option value="Tete">Tete</option>
+            <option value="Zambezia">Zambezia</option>
+            <option value="Nampula">Nampula</option>
+            <option value="Niassa">Niassa</option>
+            <option value="Cabo Delgado">Cabo Delgado</option>
+        </select>
+        <label>Sexo:</label>
+        <input type="radio" id="sexo_m" name="sexo" value="M">
+        <label for="sexo_m">Masculino</label>
+        <input type="radio" id="sexo_f" name="sexo" value="F">
+        <label for="sexo_f">Feminino</label>
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao"></textarea>
+        <input type="submit" value="Enviar" onclick="validarForm(event)">
+    </form>
+    <div id="mensagem" class="message"></div>
+
+
+    <script src="ex9.js"></script>
+</body>
+
+</html>
