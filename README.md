@@ -8,7 +8,7 @@
 ### CSS3
 ### JavaScript
 
-# Screenshot das interfaces de alguns  exercicios
+# Screenshots das interfaces de alguns  exercicios
 
 ![](./design/ParImpar.png)
 ![](./design/IMC.png)
