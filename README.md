@@ -1,6 +1,6 @@
 # Resolução de Ficha de Exercicio JavaScript
 
-#### Óla, o presente repositorio contém resoluções de exercicios  de JavaScript.
+#### Olá, o presente repositorio contém resoluções de exercicios  de JavaScript.
 
  
 ## Tecnologias Usadas
